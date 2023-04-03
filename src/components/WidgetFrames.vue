@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+const lastFrame = 250
 const n = ref(1)
 const opacity = ref(0.5)
+const percent = computed(() => (100 * n.value) / lastFrame)
 </script>
 
 <template>
@@ -25,6 +27,10 @@ const opacity = ref(0.5)
 			min="0"
 			max="1"
 		>
+
+		<span>
+			{{ percent }}
+		</span>
 	</header>
 
 	<div
