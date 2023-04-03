@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from '~/components/HelloWorld.vue'
+import WidgetCssAnimation from '~/components/WidgetCssAnimation.vue'
+import WidgetFrames from '~/components/WidgetFrames.vue'
 </script>
 
 <template>
-	<HelloWorld />
+	<div class="min-h-screen flex justify-center items-center">
+		<WidgetFrames />
+		<WidgetCssAnimation />
+	</div>
 </template>
