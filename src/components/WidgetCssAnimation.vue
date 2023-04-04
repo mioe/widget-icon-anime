@@ -21,6 +21,21 @@ const opacity = ref(0.5)
 				fill="currentColor"
 			/>
 		</svg>
+
+		<svg
+			class="WidgetCssAnimationWaCircle"
+			viewBox="0 0 148 148"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				class="path"
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M126.437 21.5065C119.596 14.6618 111.468 9.2378 102.522 5.54686C93.5757 1.85592 83.9879 -0.0290926 74.3103 0.000339407C33.6963 0.000339407 0.634284 32.8972 0.617766 73.3394C0.599799 86.2171 3.99432 98.8696 10.4558 110.009L0 148L39.0646 137.802C49.8779 143.66 61.9825 146.726 74.2806 146.721H74.3103C114.921 146.721 147.98 113.821 148 73.3824C148.024 63.7378 146.131 54.1847 142.429 45.2788C138.727 36.3729 133.291 28.2921 126.437 21.5065ZM74.3103 134.343H74.2839C63.3206 134.346 52.5567 131.412 43.1115 125.846L40.875 124.525L17.6939 130.577L23.8815 108.083L22.4246 105.771C16.2944 96.0652 13.0466 84.8186 13.059 73.3394C13.059 39.7323 40.5479 12.3887 74.3335 12.3887C90.5407 12.3598 106.096 18.7696 117.577 30.2085C129.059 41.6474 135.527 57.1784 135.558 73.3857C135.545 106.996 108.069 134.343 74.3103 134.343Z"
+				fill="currentColor"
+			/>
+		</svg>
 	</div>
 
 	<footer class="fixed bottom-[24px] left-[50%] transform -translate-x-[50%]">
@@ -48,8 +63,35 @@ const opacity = ref(0.5)
 	border-radius: 50%;
 	background-color: red;
 	color: yellow;
-	transform: scale(0.2);
+	/* transform: scale(0.2); */
 }
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+.WidgetCssAnimationWaCircle {
+	all: unset;
+	display: flex;
+	position: absolute;
+	top: 54px;
+	left: 54px;
+	width: 170px;
+}
+
+
 
 @keyframes slidein {
 	from {
@@ -221,10 +263,11 @@ const opacity = ref(0.5)
 	left: 37px;
 	width: 171px;
 	height: 141px;
+	opacity: 0;
 
-	animation-duration: 10s;
+	/* animation-duration: 10s;
 	animation-name: slidein;
 	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	animation-timing-function: linear; */
 }
 </style>
