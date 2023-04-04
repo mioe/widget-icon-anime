@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-const opacity = ref(0.5)
+defineProps({
+	opacity: {
+		type: Number,
+		default: 1,
+	},
+})
 </script>
 
 <template>
@@ -22,16 +26,6 @@ const opacity = ref(0.5)
 			/>
 		</svg>
 	</div>
-
-	<footer class="fixed bottom-[24px] left-[50%] transform -translate-x-[50%]">
-		<input
-			v-model="opacity"
-			type="range"
-			step="0.1"
-			min="0"
-			max="1"
-		>
-	</footer>
 </template>
 
 <style>
