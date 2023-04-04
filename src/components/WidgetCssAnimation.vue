@@ -4,14 +4,19 @@ defineProps({
 		type: Number,
 		default: 1,
 	},
+	isActive: {
+		type: Boolean,
+		default: false,
+	},
 })
 </script>
 
 <template>
 	<div
 		class="WidgetCssAnimation"
+		:class="isActive && 'is-active'"
 		:style="{
-			opacity
+			opacity,
 		}"
 	>
 		<svg
@@ -29,22 +34,6 @@ defineProps({
 </template>
 
 <style>
-:root {
-	--widget-scale: 1;
-}
-
-.WidgetCssAnimation {
-	all: unset;
-	width: 280px;
-	position: relative;
-	display: flex;
-	aspect-ratio: 1 / 1;
-	border-radius: 50%;
-	background-color: red;
-	color: yellow;
-	/* transform: scale(0.2); */
-}
-
 @keyframes WidgetCssAnimationTgMessageAnimation {
 	from {
 		transform: translate(0, 0) rotate(0) scale(1);
@@ -207,6 +196,29 @@ defineProps({
 	}
 }
 
+.WidgetCssAnimation {
+	all: unset;
+	width: 280px;
+	position: relative;
+	display: flex;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	background-color: red;
+	color: yellow;
+}
+
+.WidgetCssAnimation.is-active {
+	background-color: #0088cc;
+	color: white;
+}
+
+.WidgetCssAnimation.is-active .WidgetCssAnimationTgMessage {
+	animation-duration: 10s;
+	animation-name: WidgetCssAnimationTgMessageAnimation;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
 .WidgetCssAnimationTgMessage {
 	all: unset;
 	display: flex;
@@ -215,11 +227,5 @@ defineProps({
 	left: 37px;
 	width: 171px;
 	height: 141px;
-	opacity: 0;
-
-	/* animation-duration: 10s;
-	animation-name: WidgetCssAnimationTgMessageAnimation;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear; */
 }
 </style>

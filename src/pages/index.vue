@@ -55,6 +55,7 @@ const staticFiles = [
 					<p>html + svg + css</p>
 					<div class="w-[86px] h-[86px]">
 						<WidgetCssAnimation
+							is-active
 							style="
 								transform: scale(0.307);
 								transform-origin: top left;
