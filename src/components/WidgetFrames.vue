@@ -4,6 +4,7 @@ const lastFrame = 250
 const n = ref(1)
 const opacity = ref(0.5)
 const percent = computed(() => (100 * n.value) / lastFrame)
+const staticPrefix = import.meta.url[5] === ':'
 </script>
 
 <template>
@@ -40,7 +41,7 @@ const percent = computed(() => (100 * n.value) / lastFrame)
 		}"
 	>
 		<img
-			:src="`/images/p${n}.png`"
+			:src="`${staticPrefix ? '/widget-icon-anime' : ''}/images/p${n}.png`"
 			alt=""
 			class="w-[304px]"
 		>

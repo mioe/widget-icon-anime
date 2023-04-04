@@ -1,11 +1,20 @@
 <script setup lang="ts">
-import WidgetCssAnimation from '~/components/WidgetCssAnimation.vue'
-import WidgetFrames from '~/components/WidgetFrames.vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const routes = router.options.routes
 </script>
 
 <template>
-	<div class="min-h-screen flex justify-center items-center">
-		<WidgetFrames />
-		<WidgetCssAnimation />
-	</div>
+	<header class="flex gap-[16px] p-[8px]">
+		<RouterLink
+			v-for="route in routes"
+			:key="route.name"
+			:to="{ name: route.name }"
+		>
+			{{ route.name }}
+		</RouterLink>
+	</header>
+
+	<RouterView />
 </template>
