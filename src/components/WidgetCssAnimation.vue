@@ -41,13 +41,14 @@ const opacity = ref(0.5)
 
 .WidgetCssAnimation {
 	all: unset;
-	width: calc(280px * var(--widget-scale));
+	width: 280px;
 	position: relative;
 	display: flex;
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
 	background-color: red;
 	color: yellow;
+	transform: scale(0.2);
 }
 
 @keyframes slidein {
@@ -62,122 +63,152 @@ const opacity = ref(0.5)
 	}
 
 	22% {
-		transform: translate(calc(30px * var(--widget-scale)), calc(-5px * var(--widget-scale))) rotate(-20deg) scale(0.9);
+		transform: translate(30px, -5px) rotate(-20deg) scale(0.9);
 		opacity: 1;
 	}
 
 	22.4% {
-		transform: translate(calc(45px * var(--widget-scale)), calc(-13px * var(--widget-scale))) rotate(-33deg) scale(0.85);
+		transform: translate(45px, -13px) rotate(-33deg) scale(0.85);
 		opacity: 1;
 	}
 
 	22.8% {
-		transform: translate(calc(56px * var(--widget-scale)), calc(-26px * var(--widget-scale))) rotate(-45deg) scale(0.76);
+		transform: translate(56px, -26px) rotate(-45deg) scale(0.76);
 		opacity: 1;
 	}
 
 	23.6% {
-		transform: translate(calc(51px * var(--widget-scale)), calc(-53px * var(--widget-scale))) rotate(-74deg) scale(0.63);
+		transform: translate(51px, -53px) rotate(-74deg) scale(0.63);
 		opacity: 1;
 	}
 
 	24% {
-		transform: translate(calc(41px * var(--widget-scale)), calc(-61px * var(--widget-scale))) rotate(-89deg) scale(0.55);
+		transform: translate(41px, -61px) rotate(-89deg) scale(0.55);
 		opacity: 1;
 	}
 
 	24.4% {
-		transform: translate(calc(29px * var(--widget-scale)), calc(-64px * var(--widget-scale))) rotate(-103deg) scale(0.5);
+		transform: translate(29px, -64px) rotate(-103deg) scale(0.5);
 		opacity: 1;
 	}
 
 	24.8% {
-		transform: translate(calc(13px * var(--widget-scale)), calc(-67px * var(--widget-scale))) rotate(-119deg) scale(0.4);
+		transform: translate(13px, -67px) rotate(-119deg) scale(0.4);
 		opacity: 1;
 	}
 
 	25.6% {
-		transform: translate(calc(-14px * var(--widget-scale)), calc(-63px * var(--widget-scale))) rotate(-144deg) scale(0.29);
+		transform: translate(-14px, -63px) rotate(-144deg) scale(0.29);
 		opacity: 1;
 	}
 
 	26.8% {
-		transform: translate(calc(-42px * var(--widget-scale)), calc(-49px * var(--widget-scale))) rotate(-170deg) scale(0.16);
+		transform: translate(-42px, -49px) rotate(-170deg) scale(0.16);
 		opacity: 1;
 	}
 
 	28% {
-		transform: translate(calc(-53px * var(--widget-scale)), calc(-37px * var(--widget-scale))) rotate(-181deg) scale(0.09);
+		transform: translate(-53px, -37px) rotate(-181deg) scale(0.09);
 		opacity: 1;
 	}
 
 	29% {
-		transform: translate(calc(-53px * var(--widget-scale)), calc(-37px * var(--widget-scale))) rotate(-181deg) scale(0.09);
+		transform: translate(-53px, -37px) rotate(-181deg) scale(0.09);
 		opacity: 0;
 	}
 
 	30% {
-		transform: translate(calc(-53px * var(--widget-scale)), calc(-37px * var(--widget-scale))) rotate(-181deg) scale(0.08);
+		transform: translate(-53px, -37px) rotate(-181deg) scale(0.08);
 		opacity: 0;
 	}
 
 	82.4% {
-		transform: translate(calc(20px * var(--widget-scale)), calc(-85px * var(--widget-scale))) rotate(-130deg) scale(0.08);
-		opacity: 1;
+		transform: translate(20px, -85px) rotate(-130deg) scale(0.08);
+		opacity: 0;
 	}
 
 	83.6% {
-		transform: translate(calc(2px * var(--widget-scale)), calc(-83px * var(--widget-scale))) rotate(-144deg) scale(0.09);
+		transform: translate(2px, -83px) rotate(-144deg) scale(0.09);
 		opacity: 1;
 	}
 
 	84% {
-		transform: translate(calc(-10px * var(--widget-scale)), calc(-79px * var(--widget-scale))) rotate(-151deg) scale(0.09);
+		transform: translate(-10px, -79px) rotate(-151deg) scale(0.09);
 		opacity: 1;
 	}
 
 	84.8% {
-		transform: translate(calc(-44px * var(--widget-scale)), calc(-64px * var(--widget-scale))) rotate(-182deg) scale(0.1);
+		transform: translate(-44px, -64px) rotate(-182deg) scale(0.1);
 		opacity: 1;
 	}
 
 	85.2% {
-		transform: translate(calc(-60px * var(--widget-scale)), calc(-49px * var(--widget-scale))) rotate(-203deg) scale(0.13);
+		transform: translate(-60px, -49px) rotate(-203deg) scale(0.13);
 		opacity: 1;
 	}
 
 	85.6% {
-		transform: translate(calc(-71px * var(--widget-scale)), calc(-32px * var(--widget-scale))) rotate(-230deg) scale(0.18);
+		transform: translate(-71px, -32px) rotate(-230deg) scale(0.18);
 		opacity: 1;
 	}
 
 	86% {
-		transform: translate(calc(-75px * var(--widget-scale)), calc(-11px * var(--widget-scale))) rotate(-253deg) scale(0.25);
+		transform: translate(-75px, -11px) rotate(-253deg) scale(0.25);
 		opacity: 1;
 	}
 
 	86.4% {
-		transform: translate(calc(-71px * var(--widget-scale)), calc(7px * var(--widget-scale))) rotate(-281deg) scale(0.35);
+		transform: translate(-71px, 7px) rotate(-281deg) scale(0.35);
 		opacity: 1;
 	}
 
 	86.8% {
-		transform: translate(calc(-61px * var(--widget-scale)), calc(21px * var(--widget-scale))) rotate(-307deg) scale(0.45);
+		transform: translate(-61px, 21px) rotate(-307deg) scale(0.45);
 		opacity: 1;
 	}
 
 	87.2% {
-		transform: translate(calc(-47px * var(--widget-scale)), calc(26px * var(--widget-scale))) rotate(-324deg) scale(0.55);
+		transform: translate(-47px, 26px) rotate(-324deg) scale(0.55);
 		opacity: 1;
 	}
 
-	87.2% {
-		transform: translate(calc(-47px * var(--widget-scale)), calc(26px * var(--widget-scale))) rotate(-324deg) scale(0.55);
+	87.6% {
+		transform: translate(-33px, 25px) rotate(-334deg) scale(0.63);
+		opacity: 1;
+	}
+
+	88% {
+		transform: translate(-24px, 20px) rotate(-341deg) scale(0.72);
+		opacity: 1;
+	}
+
+	88.4% {
+		transform: translate(-16px, 16px) rotate(-346deg) scale(0.8);
+		opacity: 1;
+	}
+
+	88.4% {
+		transform: translate(-16px, 16px) rotate(-346deg) scale(0.8);
+		opacity: 1;
+	}
+
+	88.8% {
+		transform: translate(-10px, 9px) rotate(-350deg) scale(0.88);
+		opacity: 1;
+	}
+
+	89.6% {
+		transform: translate(-3px, 4px) rotate(-357deg) scale(0.95);
+		opacity: 1;
+	}
+
+	91.2% {
+		transform: translate(0px, 0px) rotate(-360deg) scale(1);
 		opacity: 1;
 	}
 
 	to {
-		transform: translate(17px, 26px) rotate(0) scale(1);
+		transform: translate(0px, 0px) rotate(-360deg) scale(1);
 		opacity: 1;
 	}
 }
@@ -186,14 +217,14 @@ const opacity = ref(0.5)
 	all: unset;
 	display: flex;
 	position: absolute;
-	top: calc(79px * var(--widget-scale));
-	left: calc(37px * var(--widget-scale));
-	width: calc(171px * var(--widget-scale));
-	height: calc(141px * var(--widget-scale));
+	top: 79px;
+	left: 37px;
+	width: 171px;
+	height: 141px;
 
-		/* animation-duration: 10s;
-		animation-name: slidein;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear; */
+	animation-duration: 10s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 </style>
