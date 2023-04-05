@@ -3,6 +3,7 @@ import { onMounted } from 'vue'
 
 onMounted(() => {
 	const path = document.querySelector('.path')
+	// @ts-ignore
 	const length = path?.getTotalLength()
 	console.log('🦕 length', length)
 })
