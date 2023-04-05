@@ -1,4 +1,4 @@
-import{d as o,o as s,c as a,a as t,b as c}from"./index-3552d549.js";const l={class:"flex gap-[32px]"},i=t("svg",{width:"148",height:"148",viewBox:"0 0 148 148",fill:"none",xmlns:"http://www.w3.org/2000/svg"},[t("path",{class:"path",d:`
+import{d as o,o as s,c as a,a as t,b as c}from"./index-5a0b7c84.js";const l={class:"flex gap-[32px]"},i=t("svg",{width:"148",height:"148",viewBox:"0 0 148 148",fill:"none",xmlns:"http://www.w3.org/2000/svg"},[t("path",{class:"path2",d:`
 					M 122.194 25.7482
 					L 122.205 25.7593
 					L 122.216 25.7704
