@@ -19,7 +19,7 @@ onMounted(() => {
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<path
-				class="path"
+				class="path2"
 				d="
 					M 122.194 25.7482
 					L 122.205 25.7593
@@ -86,10 +86,25 @@ onMounted(() => {
 
 @keyframes dash {
 	from {
-		stroke-dashoffset: 456;
+		stroke-dashoffset: -456;
 	}
 	to {
 		stroke-dashoffset: 0;
+	}
+}
+
+.path2 {
+	stroke-dasharray: 456;
+	stroke-dashoffset: 456;
+	animation: dash2 5s linear infinite;
+}
+
+@keyframes dash2 {
+	from {
+		stroke-dashoffset: 0;
+	}
+	to {
+		stroke-dashoffset: 456;
 	}
 }
 </style>

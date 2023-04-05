@@ -30,10 +30,298 @@ defineProps({
 				fill="currentColor"
 			/>
 		</svg>
+
+		<svg
+			class="WidgetCssAnimationWaCircle"
+			width="148"
+			height="148"
+			viewBox="0 0 148 148"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				class="WidgetCssAnimationWaCirclePathIn"
+				d="
+					M 6.61776 73.3479
+					L 6.61777 73.3419
+					C 6.62418 57.6475 12.0481 43.1969 21.1396 31.727
+					C 33.5591 16.0586 52.7807 6.00037 74.3104 6.00037
+					C 111.637 6.00037 142.018 36.2826 142 73.3795
+					C 141.982 110.482 111.633 140.722 74.3104 140.722
+					H 74.2807
+					H 74.2786
+					C 62.9793 140.725 51.8577 137.909 41.9227 132.526
+					L 39.8405 131.398L37.5491 131.997
+					L 8.54356 139.569L16.2407 111.601
+					L 16.9084 109.175
+					L 15.6458 106.999
+					C 9.71635 96.7762 6.60127 85.1654 6.61776 73.3479 Z
+				"
+				stroke="currentColor"
+				stroke-width="12"
+			/>
+		</svg>
+
+		<svg
+			class="WidgetCssAnimationWaCircle"
+			width="148"
+			height="148"
+			viewBox="0 0 148 148"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				class="WidgetCssAnimationWaCirclePathOut"
+				d="
+					M 122.194 25.7482
+					L 122.205 25.7593
+					L 122.216 25.7704
+					C 128.504 31.9962 133.492 39.4104 136.888 47.5817
+					C 140.285 55.753 142.022 64.5181 142 73.3671
+					L 142 73.3795
+					C 141.982 110.482 111.633 140.722 74.3104 140.722
+					H 74.2807
+					H 74.2786C62.9793 140.725 51.8577 137.909 41.9227 132.526
+					L 39.8405 131.398
+					L 37.5491 131.996
+					L 8.54357 139.569
+					L 16.2407 111.601
+					L 16.9084 109.175
+					L 15.6458 106.998
+					C 9.71635 96.7762 6.60127 85.1653 6.61776 73.3478
+					L 6.61777 73.3419C6.63292 36.2376 36.9839 6.00034 74.3104 6.00034
+					H 74.3195L74.3287 6.00031
+					C 83.215 5.97329 92.019 7.70418 100.234 11.0934
+					C 108.448 14.4825 115.912 19.463 122.194 25.7482 Z"
+				stroke="currentColor"
+				stroke-width="12"
+			/>
+		</svg>
+
+		<svg
+			class="WidgetCssAnimationWaPhone"
+			width="75"
+			height="70"
+			viewBox="0 0 75 70"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M71.0471 49.2315C69.2069 48.313 60.1442 43.8791 58.4659 43.2679C56.7875 42.6567 55.5485 42.3494 54.3228 44.1864C53.097 46.0234 49.5651 50.1334 48.4914 51.3724C47.4176 52.6113 46.3438 52.7468 44.5036 51.8283C42.6633 50.9098 36.7262 48.977 29.6922 42.7327C24.2176 37.8726 20.5238 31.8727 19.4501 30.0391C18.3763 28.2054 19.3344 27.2109 20.2562 26.2991C21.0855 25.4764 22.0965 24.1581 23.0183 23.0877C23.9401 22.0172 24.2473 21.2507 24.8586 20.0283C25.4698 18.8058 25.1658 17.7353 24.7066 16.8202C24.2473 15.905 20.5635 6.88202 19.0305 3.21139C17.5338 -0.363436 16.0173 0.122243 14.8874 0.066077C13.8136 0.0132146 12.5747 0 11.3555 0C10.4235 0.0242596 9.50653 0.240389 8.6618 0.634898C7.81708 1.02941 7.06275 1.59382 6.44592 2.2929C4.75762 4.12987 0 8.57032 0 17.5834C0 26.5964 6.60781 35.3187 7.51969 36.5412C8.43156 37.7636 20.504 56.2754 38.9761 64.2146C42.4062 65.6836 45.911 66.9717 49.4759 68.0736C53.8867 69.4679 57.9009 69.2729 61.0726 68.8005C64.6111 68.2751 71.9755 64.3666 73.5052 60.0848C75.0349 55.8029 75.0382 52.1356 74.579 51.3724C74.1198 50.6092 72.8907 50.1466 71.0471 49.2315Z"
+				fill="currentColor"
+			/>
+		</svg>
 	</div>
 </template>
 
 <style>
+.WidgetCssAnimation {
+	all: unset;
+	width: 280px;
+	position: relative;
+	display: flex;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	background-color: red;
+	color: yellow;
+}
+
+.WidgetCssAnimation.is-active {
+	background-color: #0088cc;
+	color: white;
+	animation-duration: 10s;
+	animation-name: WidgetCssColorAnimation;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes WidgetCssColorAnimation {
+	from {
+		background-color: #0088cc;
+	}
+
+	22% {
+		background-color: #0088cc;
+	}
+
+	28.8% {
+		background-color: #25d366;
+	}
+
+	82% {
+		background-color: #25d366;
+	}
+
+	88% {
+		background-color: #0088cc;
+	}
+
+	to {
+		background-color: #0088cc;
+	}
+}
+
+.WidgetCssAnimationWaPhone {
+	position: absolute;
+	top: 107px;
+	left: 101px;
+	transform: scale(1.15);
+	transform-origin: center center;
+}
+
+.WidgetCssAnimation.is-active .WidgetCssAnimationWaPhone {
+	animation-duration: 10s;
+	animation-name: WidgetCssAnimationWaPhoneAnimation;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes WidgetCssAnimationWaPhoneAnimation {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	34% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	34.01% {
+		transform: scale(0);
+		opacity: 1;
+	}
+
+	38% {
+		transform: scale(1.24);
+		opacity: 1;
+	}
+
+	41.2% {
+		transform: scale(1.15);
+		opacity: 1;
+	}
+
+	78.8% {
+		transform: scale(1.15);
+		opacity: 1;
+	}
+
+	81.2% {
+		transform: scale(1.3);
+		opacity: 1;
+	}
+
+	83.6% {
+		transform: scale(0);
+		opacity: 1;
+	}
+
+	83.601% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	to {
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+
+.WidgetCssAnimationWaCircle {
+	position: absolute;
+	top: 66px;
+	left: 67px;
+	transform: scale(1.15);
+}
+
+.WidgetCssAnimation.is-active .WidgetCssAnimationWaCirclePathIn {
+	stroke-dashoffset: 912;
+	stroke-dasharray: 456;
+	animation-duration: 10s;
+	animation-name: WidgetCssAnimationWaCirclePathInAnimation;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.WidgetCssAnimation.is-active .WidgetCssAnimationWaCirclePathOut {
+	stroke-dashoffset: 456;
+	stroke-dasharray: 456;
+	animation-duration: 10s;
+	animation-name: WidgetCssAnimationWaCirclePathOutAnimation;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes WidgetCssAnimationWaCirclePathOutAnimation {
+	from {
+		stroke-dashoffset: 0;
+		opacity: 0;
+	}
+
+	40.8% {
+		stroke-dashoffset: 0;
+		opacity: 0;
+	}
+
+	40.801% {
+		stroke-dashoffset: 0;
+		opacity: 1;
+	}
+
+	70.8% {
+		stroke-dashoffset: 0;
+		opacity: 1;
+	}
+
+	82% {
+		stroke-dashoffset: 456;
+		opacity: 1;
+	}
+
+	82.01% {
+		stroke-dashoffset: 456;
+		opacity: 0;
+	}
+
+	to {
+		stroke-dashoffset: 456;
+		opacity: 0;
+	}
+}
+
+@keyframes WidgetCssAnimationWaCirclePathInAnimation {
+	from {
+		stroke-dashoffset: 456;
+		opacity: 0;
+	}
+
+	28.8% {
+		stroke-dashoffset: 456;
+		opacity: 0;
+	}
+
+	28.801% {
+		stroke-dashoffset: 456;
+		opacity: 1;
+	}
+
+	41% {
+		stroke-dashoffset: 0;
+		opacity: 1;
+	}
+
+	41.001% {
+		stroke-dashoffset: 0;
+		opacity: 0;
+	}
+
+	to {
+		stroke-dashoffset: 0;
+		opacity: 0;
+	}
+}
+
 @keyframes WidgetCssAnimationTgMessageAnimation {
 	from {
 		transform: translate(0, 0) rotate(0) scale(1);
@@ -194,22 +482,6 @@ defineProps({
 		transform: translate(0px, 0px) rotate(-360deg) scale(1);
 		opacity: 1;
 	}
-}
-
-.WidgetCssAnimation {
-	all: unset;
-	width: 280px;
-	position: relative;
-	display: flex;
-	aspect-ratio: 1 / 1;
-	border-radius: 50%;
-	background-color: red;
-	color: yellow;
-}
-
-.WidgetCssAnimation.is-active {
-	background-color: #0088cc;
-	color: white;
 }
 
 .WidgetCssAnimation.is-active .WidgetCssAnimationTgMessage {
