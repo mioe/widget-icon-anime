@@ -1,0 +1,1 @@
+.path{stroke-dashoffset:912;stroke-dasharray:456;animation:dash 5s linear infinite}@keyframes dash{0%{stroke-dashoffset:456}to{stroke-dashoffset:912}}.path2{stroke-dashoffset:456;stroke-dasharray:456;animation:dash2 5s linear infinite}@keyframes dash2{0%{stroke-dashoffset:0}to{stroke-dashoffset:456}}
