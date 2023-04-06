@@ -79,23 +79,23 @@ onMounted(() => {
 
 <style>
 .path {
+	stroke-dashoffset: 912;
 	stroke-dasharray: 456;
-	stroke-dashoffset: 0;
 	animation: dash 5s linear infinite;
 }
 
 @keyframes dash {
 	from {
-		stroke-dashoffset: -456;
+		stroke-dashoffset: 456;
 	}
 	to {
-		stroke-dashoffset: 0;
+		stroke-dashoffset: 912;
 	}
 }
 
 .path2 {
-	stroke-dasharray: 456;
 	stroke-dashoffset: 456;
+	stroke-dasharray: 456;
 	animation: dash2 5s linear infinite;
 }
 

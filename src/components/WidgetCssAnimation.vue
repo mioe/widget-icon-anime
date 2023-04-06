@@ -307,17 +307,17 @@ defineProps({
 	}
 
 	41% {
-		stroke-dashoffset: 0;
+		stroke-dashoffset: 912;
 		opacity: 1;
 	}
 
 	41.001% {
-		stroke-dashoffset: 0;
+		stroke-dashoffset: 912;
 		opacity: 0;
 	}
 
 	to {
-		stroke-dashoffset: 0;
+		stroke-dashoffset: 912;
 		opacity: 0;
 	}
 }
